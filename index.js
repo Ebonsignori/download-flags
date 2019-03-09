@@ -15,8 +15,8 @@ const errors = []
 
 async function main () {
   try {
-    fs.ensureDir(saveDirectory)
-    console.log(`Created directory ${saveDirectory}`)
+    await fs.ensureDir(saveDirectory)
+    console.log(`${saveDirectory} exists or was created successfully.`)
   } catch (err) {
     console.error(`Unable to create directory: ${saveDirectory}`)
   }
@@ -37,6 +37,8 @@ async function main () {
   if (errors.length > 0) {
     console.error('Errors occurred while fetching images.')
     console.log(errors)
+  } else {
+    console.log('Flags saved without errors.')
   }
 }
 
