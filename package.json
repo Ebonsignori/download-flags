@@ -1,0 +1,16 @@
+{
+  "name": "download-flags",
+  "version": "1.0.0",
+  "description": "Download flag images to local disk",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Evan Bonsignori",
+  "license": "ISC",
+  "dependencies": {
+    "fake-useragent": "^1.0.1",
+    "fs-extra": "^7.0.1",
+    "request": "^2.88.0"
+  }
+}
